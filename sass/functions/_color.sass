@@ -1,0 +1,5 @@
+@use "../config/colors"
+@use "../functions/map"
+
+@function color($name, $value)
+	@return map.deep-get(colors.$colors, $name, $value)

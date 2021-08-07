@@ -1,0 +1,14 @@
+@use "sass:map"
+
+
+// Get value multi dimensional map
+@function deep-get($map, $keys...)
+	@each $key in $keys
+		$map: map.get($map, $key)
+	@return $map
+
+
+// Get if type of map
+@function is-map($map)
+	@return type-of($map) == 'map'
+

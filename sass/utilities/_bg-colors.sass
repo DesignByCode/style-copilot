@@ -1,0 +1,11 @@
+@use "../../sass/theme"
+
+
+@each $color, $shades in theme.$colors
+	@each $key, $value in $shades
+		@if $key == DEFAULT
+			.bg--#{$color}
+				background-color: var(--#{$color})
+		@else
+			.bg--#{$color}-#{$key}
+				background-color: var(--#{$color}-#{$key})

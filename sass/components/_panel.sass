@@ -1,0 +1,9 @@
+
+@use '../config/grid'
+@use "../functions"
+.panel
+	padding: functions.deep-get(grid.$grid, 'padding')
+	box-shadow: rgba(0,0,0,0.25) 0 0 2px
+	background-color: var(--panel-bg-color, #fff)
+	color: var(--panel-color, #333)
+	border-radius: var(--panel-radius, 4px)
