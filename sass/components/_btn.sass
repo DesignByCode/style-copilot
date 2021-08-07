@@ -15,6 +15,9 @@
 	border: none
 	cursor: pointer
 
+	&:hover
+		transform: scale(1.05)
+
 	&:not(:last-child)
 		margin-right: math.div(functions.deep-get(config.$grid, 'padding'), 2)
 
@@ -26,11 +29,11 @@
 					@if color.blackness($value) < 35%
 						color: var(--gray-100)
 					@else
-						color: var(--gray-700)
+						color: var(--gray-900)
 			@else
 				&--#{$color}-#{$key}
 					background-color: var(--#{$color}-#{$key})
 					@if color.blackness($value) < 35%
-						color: var(--gray-700)
+						color: var(--gray-900)
 					@else
 						color: var(--gray-100)
