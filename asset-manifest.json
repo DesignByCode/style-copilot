@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/DesignByCode/style-copilot/static/css/main.f4cba78d.chunk.css",
+    "main.js": "/DesignByCode/style-copilot/static/js/main.de9dae41.chunk.js",
+    "main.js.map": "/DesignByCode/style-copilot/static/js/main.de9dae41.chunk.js.map",
+    "runtime-main.js": "/DesignByCode/style-copilot/static/js/runtime-main.468f46a5.js",
+    "runtime-main.js.map": "/DesignByCode/style-copilot/static/js/runtime-main.468f46a5.js.map",
+    "static/js/2.d916bc42.chunk.js": "/DesignByCode/style-copilot/static/js/2.d916bc42.chunk.js",
+    "static/js/2.d916bc42.chunk.js.map": "/DesignByCode/style-copilot/static/js/2.d916bc42.chunk.js.map",
+    "index.html": "/DesignByCode/style-copilot/index.html",
+    "static/css/main.f4cba78d.chunk.css.map": "/DesignByCode/style-copilot/static/css/main.f4cba78d.chunk.css.map",
+    "static/js/2.d916bc42.chunk.js.LICENSE.txt": "/DesignByCode/style-copilot/static/js/2.d916bc42.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.468f46a5.js",
+    "static/js/2.d916bc42.chunk.js",
+    "static/css/main.f4cba78d.chunk.css",
+    "static/js/main.de9dae41.chunk.js"
+  ]
+}
