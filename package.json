@@ -1,7 +1,7 @@
 {
   "name": "style-copilot",
   "version": "1.0.1",
-	"homepage": "https://github.com/DesignByCode/style-copilot",
+	"homepage": "https://designbycode/style-copilot",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
