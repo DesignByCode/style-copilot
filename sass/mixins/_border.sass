@@ -1,0 +1,11 @@
+@use "sass:color"
+
+=borders($colors)
+	@each $color, $shades in $colors
+		@each $key, $value in $shades
+			@if $key == DEFAULT
+				&--#{$color}
+					border: solid 1px var(--#{$color})
+			@else
+				&--#{$color}-#{$key}
+					border: solid 1px var(--#{$color}-#{$key})

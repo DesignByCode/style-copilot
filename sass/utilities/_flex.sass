@@ -1,0 +1,76 @@
+//@use "../../sass/config"
+//@use "../../sass/functions"
+//
+
+.flex
+	display: flex
+	flex-wrap: wrap
+
+	&--grow
+		flex-grow: 1
+	&--row
+		flex-direction: row
+	&--column
+		flex-direction: column
+	&--align-center
+		align-items: center
+	&--align-start
+		align-items: flex-start
+	&--align-end
+		align-items: flex-end
+	&--center
+		justify-content: center
+		align-items: center
+
+
+.justify
+	&--center
+		justify-content: center
+	&--between
+		justify-content: space-between
+	&--evenly
+		justify-content: space-evenly
+	&--around
+		justify-content: space-around
+	&--start
+		justify-content: flex-start
+	&--end
+		justify-content: flex-end
+//
+//$breakpointsMap: functions.deep-get(config.$grid, 'breakpoints')
+//
+//@each $key, $value in $breakpointsMap
+//	@for $i from 1 through 12
+//		@media screen and (min-width: #{$value})
+//			.#{$key}--flex
+//				display: flex
+//				flex-wrap: wrap
+//				&--grow
+//					flex-grow: 1
+//				&--row
+//					flex-direction: row
+//				&--column
+//					flex-direction: column
+//				&--align-center
+//					align-items: center
+//				&--align-start
+//					align-items: flex-start
+//				&--align-end
+//					align-items: flex-end
+//				&--center
+//					justify-content: center
+//					align-items: center
+//
+//				.#{$key}--justify
+//					&--center
+//						justify-content: center
+//					&--between
+//						justify-content: space-between
+//					&--evenly
+//						justify-content: space-evenly
+//					&--around
+//						justify-content: space-around
+//					&--start
+//						justify-content: flex-start
+//					&--end
+//						justify-content: flex-end

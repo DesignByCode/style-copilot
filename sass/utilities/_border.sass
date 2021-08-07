@@ -1,0 +1,15 @@
+@use "../../sass/mixins"
+@use "../../sass/theme"
+
+$styles: (dotted , dashed , solid, double, groove, ridge, inset, outset, none, hidden )
+
+.border
+	+mixins.borders(theme.$colors)
+
+	@for $i from 0 through theme.$border-steps
+		&--w-#{$i}
+			border-width: #{$i}px
+
+	@each $key in $styles
+		&--#{$key}
+			border-style: $key

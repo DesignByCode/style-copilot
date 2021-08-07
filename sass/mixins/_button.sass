@@ -1,0 +1,19 @@
+@use "sass:color"
+
+=buttons($colors)
+	@each $color, $shades in $colors
+		@each $key, $value in $shades
+			@if $key == DEFAULT
+				&--#{$color}
+					background-color: var(--#{$color})
+					@if color.blackness($value) < 35%
+						color: var(--gray-100)
+					@else
+						color: var(--gray-900)
+			@else
+				&--#{$color}-#{$key}
+					background-color: var(--#{$color}-#{$key})
+					@if color.blackness($value) < 35%
+						color: var(--gray-900)
+					@else
+						color: var(--gray-100)

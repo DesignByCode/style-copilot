@@ -1,6 +1,9 @@
 @use "config"
 @use "sass:map"
 $colors: config.$colors
+$border-steps: 20 !default
+
+$nav_breakpoint: 800px
 
 \:root
 	// Fonts heading
@@ -12,13 +15,31 @@ $colors: config.$colors
 	--body-color: #444
 
 	// Global body styles
-	--body-margin-top: 0
+	--body-margin-top: 60px
 	--body-bg-color: var(--gray-100)
 	--body-line-height: 1.48
+	// Main navigation
+	--nav-bg-color: var(--cerulean)
+	--nav-brand-color: #fff
+	--nav-brand-size: 22px
+	--nav-breakpoint: 900px
+	--nav-height: 60px
+	--nav-padding: 0
+	// Navigation Links
+	--nav-link-border-radius: 4px
+	--nav-link-bg: transparent
+	--nav-link-txt: var(--cerulean-100)
+	--nav-link-bg-hover: var(--cerulean-600)
+	--nav-link-txt-hover: var(--gray-100)
+	--nav-link-height: var(--nav-height)
+	// Navigation toggle
+	--nav-toggle-border-style: 2px solid var(--ceruran-100)
+	--nav-toggle-radius: 4px
+
 
 	// Panel
 	--panel-bg-color: #fff
 	--panel-color: #444
-	//--panel-padding: 24px
+	--panel-padding: 12px
 
 

@@ -1,19 +1,32 @@
 
 $colors: (
-	blue: (
-		DEFAULT: #22ACD3,
-		50: #E0F4FA,
-		100: #CAEDF6,
-		200: #9FDEEF,
-		300: #73CFE8,
-		400: #47C0E1,
-		500: #22ACD3,
-		600: #1B88A7,
-		700: #14657B,
-		800: #0D414F,
-		900: #061D23
+	'blue': (
+		DEFAULT: #004DE6,
+		50: #9FBFFF,
+		100: #8AB1FF,
+		200: #6196FF,
+		300: #397BFF,
+		400: #1060FF,
+		500: #004DE6,
+		600: #003AAE,
+		700: #002776,
+		800: #00153E,
+		900: #000206
 	),
-	red: (
+	'turquoise': (
+		DEFAULT: #00E5E6,
+		50: #B5FFFF,
+		100: #9EFFFF,
+		200: #70FFFF,
+		300: #42FFFF,
+		400: #14FFFF,
+		500: #00E5E6,
+		600: #00ADAD,
+		700: #007575,
+		800: #003D3D,
+		900: #000505
+	),
+	'red': (
 		DEFAULT: #E60F0F,
 		50: #FDDDDD,
 		100: #FBC5C5,
@@ -26,7 +39,7 @@ $colors: (
 		800: #560606,
 		900: #260202
 	),
-	pink: (
+	'pink': (
 		DEFAULT: #E60FB4,
 		50: #FDDDF6,
 		100: #FBC5EF,
@@ -39,7 +52,7 @@ $colors: (
 		800: #560643,
 		900: #26021E
 	),
-	cerulean: (
+	'cerulean': (
 		DEFAULT: #0F9EE6,
 		50: #DDF2FD,
 		100: #C5E9FB,
@@ -52,7 +65,7 @@ $colors: (
 		800: #063B56,
 		900: #021A26
 	),
-	purple: (
+	'purple': (
 		DEFAULT: #633BBA,
 		50: #EAE4F6,
 		100: #DBD0F0,
@@ -65,7 +78,7 @@ $colors: (
 		800: #251646,
 		900: #110A1F
 	),
-	gray: (
+	'gray': (
 		DEFAULT: #6E6E6E,
 		50: #E0E0E0,
 		100: #D4D4D4,

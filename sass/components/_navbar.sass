@@ -1,0 +1,106 @@
+@use '../../sass/config'
+@use '../../sass/functions'
+@use '../../sass/theme'
+.nav
+	position: relative
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	justify-content: center
+	padding-top: var(--nav-padding, 0.5rem)
+	padding-bottom: var(--nav-padding, 0.5rem)
+	background-color: var(--nav-bg-color)
+	min-height: var(--nav-height, 50px)
+
+	&--fixed
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+
+	&__wrapper
+		display: flex
+		align-items: center
+		width: 100%
+		max-width: functions.deep-get(config.$grid, 'width_max')
+		padding: 0 functions.deep-get(config.$grid, 'padding')
+		@media screen and (max-width: 800px)
+			flex-direction: row
+			align-items: center
+			flex-wrap: wrap
+			justify-content: space-between
+
+	&__brand
+		font-size: var(--nav-brand-size, 22px)
+		white-space: nowrap
+		display: inline-flex
+		margin-right: 10px
+		min-height: var(--nav-height, 50px)
+		align-items: center
+		a
+			text-decoration: none
+			color: var(--nav-brand-color)
+
+	&__toggle
+		height: 40px
+		width: 40px
+		border: var(--nav-toggle-border-style, solid 1px #fff)
+		background-color: transparent
+		border-radius: var(--nav-toggle-radius, 4px)
+		display: none
+		cursor: pointer
+		justify-content: center
+		align-items: center
+
+		@media screen and (max-width: 800px)
+			display: flex
+
+	&__responsive
+		display: flex
+		flex-grow: 1
+		width: 100%
+		@media screen and (max-width: 800px)
+			display: none
+			margin-top: 10px
+			margin-buttom: 10px
+
+		&.open
+			display: block
+			padding-bottom: 10px
+
+	&__link
+		padding: 8px 12px
+		transition: all 0.1s ease
+		border-radius: var(--nav-link-border-radius,4px)
+		background-color: var(--nav-link-bg, transparent)
+		height: var(--nav-link-height)
+		display: flex
+		justify-content: space-between
+		align-items: center
+		@media screen and (max-width: 800px)
+			justify-content: flex-start
+			display: flex
+
+		a
+			display: flex
+			height: 100%
+			width: 100%
+			align-items: center
+			justify-content: space-between
+			text-decoration: none
+			color: var(--nav-link-txt, #333)
+
+		&:hover,
+		&.active
+			background: var(--nav-link-bg-hover, #fff)
+			a
+				color: var(--nav-link-txt-hover, #333)
+
+		&s
+			display: flex
+			list-style: none
+			margin: 0
+			padding: 0
+			@media screen and (max-width: 800px)
+				flex: 1
+				flex-direction: column

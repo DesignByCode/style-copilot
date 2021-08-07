@@ -1,8 +1,9 @@
 @use "../../sass/theme"
 @use "../../sass/functions"
 @use "../../sass/config"
+@use "../../sass/mixins"
 @use "sass:math"
-@use "sass:color"
+
 .btn
 	margin: 0
 	padding: 0 1.5rem
@@ -14,6 +15,8 @@
 	box-shadow: 0 2px 4px 0 rgba(0,0,0 , 0.15)
 	border: none
 	cursor: pointer
+	display: inline-flex
+	text-decoration: none
 
 	&:hover
 		transform: scale(1.05)
@@ -21,19 +24,4 @@
 	&:not(:last-child)
 		margin-right: math.div(functions.deep-get(config.$grid, 'padding'), 2)
 
-	@each $color, $shades in theme.$colors
-		@each $key, $value in $shades
-			@if $key == DEFAULT
-				&--#{$color}
-					background-color: var(--#{$color})
-					@if color.blackness($value) < 35%
-						color: var(--gray-100)
-					@else
-						color: var(--gray-900)
-			@else
-				&--#{$color}-#{$key}
-					background-color: var(--#{$color}-#{$key})
-					@if color.blackness($value) < 35%
-						color: var(--gray-900)
-					@else
-						color: var(--gray-100)
+	+mixins.buttons(config.$colors)
